@@ -1,0 +1,10 @@
+.swiper {
+  .swiper-slide {
+    transition: 250ms all;
+
+    &:hover {
+      transform: scale(1.5);
+      z-index: 1;
+    }
+  }
+}
