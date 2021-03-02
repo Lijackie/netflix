@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./carousel.scss";
-import { Row, Col, Popover, OverlayTrigger, Button } from "react-bootstrap";
 import SwiperCore, { Navigation, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -29,24 +28,14 @@ const images = [
   "images/ia_300000108.jpg",
 ];
 
-const popover = (
-  <Popover id="popover-basic">
-    <Popover.Title as="h3">Popover right</Popover.Title>
-    <Popover.Content>
-      And here's some <strong>amazing</strong> content. It's very engaging.
-      right?
-    </Popover.Content>
-  </Popover>
-);
-
 const Carousel = ({ title }) => {
   return (
-    <>
-      <Row>
+    <div className="container-fluid">
+      <div className="row">
         <h1 className="ml-3 mt-3">{title}</h1>
-      </Row>
-      <Row className="carousel-container">
-        <Col>
+      </div>
+      <div className="row">
+        <div className="col">
           <Swiper
             className="swiper mt-1"
             spaceBetween={0}
@@ -80,9 +69,9 @@ const Carousel = ({ title }) => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </Col>
-      </Row>
-    </>
+        </div>
+      </div>
+    </div>
   );
 };
 

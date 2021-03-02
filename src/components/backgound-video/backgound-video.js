@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Container, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import "./background-video.scss";
@@ -32,19 +31,17 @@ const BackgroundVideo = () => {
           <h1 className="ml-60 pt-70v">仙境傳說 守護永恆的愛</h1>
         </div>
         <div className="flex">
-          <Button
-            className="ml-60"
-            size="lg"
+          <button
+            className="btn btn-primary btn-lg ml-60"
             onClick={handleVideo}
-            variant="primary"
           >
             <FontAwesomeIcon className="mr-2" icon={faPlay} />
             播放
-          </Button>
-          <Button className="ml-3" size="lg" variant="light">
+          </button>
+          <button className="btn btn-light btn-lg ml-3">
             <FontAwesomeIcon className="mr-2" icon={faInfoCircle} />
             更多資訊
-          </Button>
+          </button>
         </div>
       </div>
     </div>
