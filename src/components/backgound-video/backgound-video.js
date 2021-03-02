@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import { Row, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 import "./background-video.scss";
-
 
 const BackgroundVideo = () => {
   useEffect(() => {
@@ -24,15 +23,15 @@ const BackgroundVideo = () => {
   };
 
   return (
-    <>
+    <div className="box">
       <video id="bgVideo" playsinline autoplay loop>
         <source src="ragnarok.mp4" type="video/mp4" />
       </video>
       <div className="viewport-content">
-        <Row>
+        <div>
           <h1 className="ml-60 pt-70v">仙境傳說 守護永恆的愛</h1>
-        </Row>
-        <Row className="flex">
+        </div>
+        <div className="flex">
           <Button
             className="ml-60"
             size="lg"
@@ -46,9 +45,9 @@ const BackgroundVideo = () => {
             <FontAwesomeIcon className="mr-2" icon={faInfoCircle} />
             更多資訊
           </Button>
-        </Row>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
