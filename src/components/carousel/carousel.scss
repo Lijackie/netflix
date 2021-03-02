@@ -1,10 +1,17 @@
-.swiper {
-  .swiper-slide {
-    transition: 250ms all;
+.swiper-slide {
 
-    &:hover {
-      transform: scale(1.5);
-      z-index: 1;
-    }
+  &:hover {
+    
   }
+}
+
+.img-swiper {
+
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 1;
+  }
+
 }

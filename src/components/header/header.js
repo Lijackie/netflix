@@ -10,11 +10,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link   href="#home">首頁</Nav.Link>
-            <Nav.Link href="#link">節目</Nav.Link>
-            <Nav.Link href="#home">電影</Nav.Link>
-            <Nav.Link href="#link">最新熱門影片</Nav.Link>
-            <Nav.Link href="#link">我的片單</Nav.Link>
+            <Nav.Link href="/">首頁</Nav.Link>
+            <Nav.Link href="/">我的片單</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
